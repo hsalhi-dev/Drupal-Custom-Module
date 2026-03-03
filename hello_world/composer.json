@@ -1,0 +1,15 @@
+{
+    "name": "hsalhi/hello_world",
+    "description": "This is just a test module for learning perspective",
+    "autoload": {
+        "psr-4": {
+            "Hsalhi\\HelloWorld\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "hsalhi"
+        }
+    ],
+    "require": {}
+}
