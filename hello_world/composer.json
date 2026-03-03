@@ -11,5 +11,8 @@
             "name": "hsalhi"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*",
+        "phpstan/phpstan": "^2.1"
+    }
 }
