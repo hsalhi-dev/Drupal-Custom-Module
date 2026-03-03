@@ -3,5 +3,6 @@ description: Creates a page showing "Hello World".
 package: Custom
 type: module
 version: 1.0
-core: 8.x
-core_version_requirement: ">=8"
+core_version_requirement: ^10 || ^11
+dependencies:
+  - workflows:workflows
