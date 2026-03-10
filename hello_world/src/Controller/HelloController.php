@@ -1,19 +1,22 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\hello_world\Controller\HelloController.
- */
-
 namespace Drupal\hello_world\Controller;
 
-class HelloController
-{
-    public function content()
-    {
-        return array(
-        '#type' => 'markup',
-        '#markup' => t('Hello, World!'),
-        );
-    }
+use Drupal\Core\Controller\ControllerBase;
+
+/**
+ * Returns responses for Hello World routes.
+ */
+class HelloController extends ControllerBase {
+
+  /**
+   * Builds the Hello World page.
+   */
+  public function content() {
+    return [
+      '#theme' => 'hello_world',
+      '#message' => $this->t('Hello, World!'),
+    ];
+  }
+
 }
